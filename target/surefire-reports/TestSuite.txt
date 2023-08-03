@@ -1,0 +1,39 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 678.472 s <<< FAILURE! - in TestSuite
+com.tests.TestCases.testCaseTwo  Time elapsed: 195.609 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+java.util.concurrent.TimeoutException
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_361'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1ec47d81d26fd9a7592c720d25391179, get {url=https://www.linkedin.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.25 (771113d280dd..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53524}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53524/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ec47d81d26fd9a7592c720d25391179
+	at com.tests.TestCases.testCaseTwo(TestCases.java:27)
+Caused by: java.util.concurrent.TimeoutException
+	at com.tests.TestCases.testCaseTwo(TestCases.java:27)
+
+com.tests.TestCases.tearDown  Time elapsed: 218.496 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to stop.
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_361'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1ec47d81d26fd9a7592c720d25391179, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.25 (771113d280dd..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53524}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53524/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ec47d81d26fd9a7592c720d25391179
+	at com.tests.TestCases.tearDown(TestCases.java:37)
+Caused by: java.util.concurrent.ExecutionException: 
+org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_361'
+Driver info: driver.version: unknown
+	at com.tests.TestCases.tearDown(TestCases.java:37)
+Caused by: org.openqa.selenium.TimeoutException: 
+Process timed out after waiting for 20000 ms.
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_361'
+Driver info: driver.version: unknown
+
